@@ -73,6 +73,8 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-texto {
@@ -287,4 +289,8 @@ footer {
 
 .nav-left {
   z-index: 2;
+}
+.navbar {
+  position: relative;
+  z-index: 1000;
 }
