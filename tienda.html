@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda | HEXEN</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <div class="nav-left" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="tienda.html">Tienda</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+
+  <div class="nav-center">
+    <img src="logo.png" class="logo">
+  </div>
+</nav>
+
+<section class="categoria">
+
+  <h2 class="titulo-tienda">Tienda</h2>
+
+  <h3 class="subtitulo-tienda">Productos</h3>
+  <div class="grid-tienda">
+    <img src="productos/producto1.jpg">
+    <img src="productos/producto2.jpg">
+  </div>
+
+  <h3 class="subtitulo-tienda">Abrigos</h3>
+  <div class="grid-tienda">
+    <img src="abrigos/abrigo1.jpg">
+    <img src="abrigos/abrigo2.jpg">
+  </div>
+
+  <h3 class="subtitulo-tienda">Vestidos</h3>
+  <div class="grid-tienda">
+    <img src="vestidos/vestido1.jpg">
+    <img src="vestidos/vestido2.jpg">
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 HEXEN</p>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  if (toggle && menu) {
+    toggle.addEventListener("click", function () {
+      menu.classList.toggle("active");
+    });
+  }
+});
+</script>
+
+</body>
+</html>
