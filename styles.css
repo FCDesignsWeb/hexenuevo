@@ -245,13 +245,13 @@ footer {
     font-size: 14px;
   }
   /* MENÚ FULLSCREEN */
-  .nav-left {
-  position: static;
-  width: 100%;
-  height: auto;
+.nav-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: auto;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   gap: 15px;
 }
 
