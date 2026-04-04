@@ -281,3 +281,10 @@ footer {
 .subtitulo-tienda {
   color: #ff4da6; /* rosa chicle */
 }
+.nav-center {
+  z-index: 1;
+}
+
+.nav-left {
+  z-index: 2;
+}
