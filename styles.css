@@ -100,6 +100,14 @@ body {
 /* MOBILE */
 @media (max-width: 768px) {
 
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
   .nav-left {
     position: absolute;
     top: 10px;
@@ -109,7 +117,8 @@ body {
   .nav-center {
     top: 30px;
   }
- .nav-right {
+
+  .nav-right {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -127,18 +136,6 @@ body {
 
 }
 
-.menu-toggle {
-  display: none;
-}
-  .hero {
-    height: 60vh;
-  }
-
-  .hero-texto {
-    top: 65%;
-  }
-
-}
 .menu-toggle {
   display: none;
 }
