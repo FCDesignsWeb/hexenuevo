@@ -109,7 +109,27 @@ body {
   .nav-center {
     top: 30px;
   }
+ .nav-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+  }
 
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-texto {
+    top: 65%;
+  }
+
+}
+
+.menu-toggle {
+  display: none;
+}
   .hero {
     height: 60vh;
   }
