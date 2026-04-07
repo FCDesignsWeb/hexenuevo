@@ -1,33 +1,33 @@
 /* RESET */
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Montserrat', Arial, sans-serif;
   background: white;
   color: black;
 }
 
-/* NAVBAR */
+/* NAVBAR PRO */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  position: relative;
-}
-
-.nav-center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.logo {
-  height: 40px;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
 }
 
 .nav-left {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
 
 .nav-left a {
@@ -39,13 +39,15 @@ body {
 
 .nav-right {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  font-size: 14px;
 }
 
 /* HERO */
 .hero {
   position: relative;
   height: 90vh;
+  margin-top: 60px;
 }
 
 .hero-img {
@@ -54,7 +56,6 @@ body {
   object-fit: cover;
 }
 
-/* overlay */
 .hero::before {
   content: "";
   position: absolute;
@@ -62,7 +63,15 @@ body {
   background: rgba(255,255,255,0.3);
 }
 
-/* texto */
+.logo-home {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  z-index: 3;
+}
+
 .hero-texto {
   position: absolute;
   top: 60%;
@@ -70,76 +79,132 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 2;
+  width: 80%;
 }
 
 .hero-texto h1 {
   font-size: 20px;
-  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.hero-texto ul {
-  list-style: none;
-  padding: 0;
-}
-
-.hero-texto li {
+.hero-texto li,
+.descripcion {
   font-size: 12px;
 }
 
-/* GRID */
-.grid-hogar {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+/* INTRO */
+.intro {
+  padding: 60px 30px;
 }
 
-.grid-hogar img {
+.intro h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.intro h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* GRID PRO TIENDA */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  padding: 20px;
+}
+
+.card {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.card img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* INFO PRODUCTO */
+.card-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.8);
+  padding: 5px;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* TITULOS */
+.titulo {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.subtitulo {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+/* CONTACTO */
+.contacto-hero {
+  padding: 100px 20px 30px;
+}
+
+.contacto-box {
+  padding: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
 
-  .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  .nav-left {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-
-  .nav-center {
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1001;
-}
-
-  .nav-right {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
+  .nav-left a {
+    font-size: 10px;
   }
 
   .hero {
     height: 60vh;
   }
 
-  .hero-texto {
-    top: 65%;
+  .grid {
+    gap: 6px;
+    padding: 10px;
   }
 
-}
-
-.menu-toggle {
-  display: none;
 }
