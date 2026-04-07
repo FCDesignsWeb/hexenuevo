@@ -1,91 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HEXEN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HEXEN</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
-  <div class="menu-toggle" id="menu-toggle">☰</div>
-
-  <div class="nav-left" id="menu">
+  <div class="nav-left">
     <a href="index.html">Inicio</a>
     <a href="tienda.html">Tienda</a>
     <a href="contacto.html">Contacto</a>
   </div>
-
-  <div class="nav-center">
-    <img src="logo.png" class="logo">
+  <div class="nav-right">
+    🔍 🛒
   </div>
-
- <div class="nav-right">
-  <span>🔍</span>
-  <span>🛒</span>
-</div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <img src="portada.jpg" class="hero-img">
+  <img src="logo.png" class="logo-home">
 
   <div class="hero-texto">
-    <h1>Asesoramiento en:</h1>
-    <ul>
-      <li>Selección de textiles según uso, caída y estación</li>
-      <li>Definición de siluetas acordes al cuerpo</li>
-      <li>Composición de color</li>
-      <li>Desarrollo de prendas a medida</li>
-    </ul>
-    <p class="descripcion">
-      Cada proyecto es un proceso compartido.
-    </p>
+    <h1>Asesoramiento en : </h1>
+    <p class="descripcion"></p> Selección de textiles según uso, caída y estación
+
+Definición de siluetas acordes al cuerpo y la intención
+
+Composición de color y combinaciones
+
+Desarrollo de prendas a medida y piezas únicas
+
+Cada proyecto es un proceso compartido, donde el diseño se construye en diálogo.
+Diseño personalizado y prendas a medida</p>
   </div>
 </section>
 
-<!-- INTRO -->
 <section class="intro">
-  <h2>Diseño y confección a medida</h2>
-  <h3>Creamos un diseño personalizado</h3>
+  <h2>Diseño y confección</h2>
+  <h3>Piezas únicas Cada prenda nace del encuentro entre la idea, el cuerpo y el material. Trabajamos desde el diseño personalizado, desarrollando piezas únicas tanto a partir de propuestas propias como de pedidos específicos.
 
-  <p>Trabajamos desde el diseño personalizado desarrollando piezas únicas.</p>
-  <p>Acompañamos cada proceso desde textiles hasta siluetas.</p>
-  <p>Combinamos oficio y experimentación.</p>
+Acompañamos cada proceso de manera integral: desde la elección de textiles hasta la definición de siluetas, estructuras y paleta de color, buscando que cada decisión dialogue con quien va a habitar la prenda.
+
+El enfoque combina oficio y experimentación, con especial atención en la moldería, el calce y la construcción, para lograr prendas que no solo representen una estética, sino también una forma de estar y moverse.</h3>
 </section>
 
-<!-- COMERCIO -->
-<section id="comercio" class="categoria">
-  <h2 class="titulo-hogar">Hogar</h2>
+<section>
+  <h2 class="titulo">Hogar</h2>
 
-  <div class="grid-hogar">
-    <img src="hogar/hogar1.jpg">
-    <img src="hogar/hogar3.jpg">
-    <img src="hogar/hogar4.jpg">
-    <img src="hogar/hogar5.jpg">
+  <div class="grid">
+    <div class="card"><img src="hogar/hogar1.jpg"></div>
+    <div class="card"><img src="hogar/hogar3.jpg"></div>
+    <div class="card"><img src="hogar/hogar4.jpg"></div>
+    <div class="card"><img src="hogar/hogar5.jpg"></div>
   </div>
 </section>
 
-<footer>
-  <p>© 2026 HEXEN</p>
-</footer>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("menu");
-
-  if (toggle && menu) {
-    toggle.addEventListener("click", function () {
-      menu.classList.toggle("active");
-    });
-  }
-});
-</script>
+<footer>© 2026 HEXEN</footer>
 
 </body>
 </html>
